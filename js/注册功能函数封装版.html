@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        .errortips{
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+    </style>
+    
+</head>         
+<body>
+    <div>
+        用户名：请输入3-8个数字或英文<input type="text" id='user' ><span class="errortips">您的用户名格式有误</span>
+    </div>      
+    <div>
+        密码：请输入4个数字<input type="password" id='psd'><span class="errortips">您的密码格式有误</span>
+    </div>
+    <div>
+        确认密码：请确认密码<input type="password" id='conpsd'><span class="errortips">您两次输入的密码不同</span>
+    </div>
+    <input type="button" value="注册" id='btn'>
+
+    <script>
+        //获取元素对象
+        var user = document.getElementById('user')  
+        var psd =  document.getElementById('psd')
+        var conpsd = document.getElementById('conpsd')
+        var errortips = document.getElementsByClassName('errortips')
+        var btn = document.getElementById('btn')
+        //用户名和密码的正则表达式
+        var regUser = /^\w{3,8}$/
+        var regPsd = /^\d{4}$/
+
+        // 用户名验证
+        user.onblur=function(){
+           thisname=this;
+           check(regUser,0);
+        }
+        // 密码验证
+        psd.onblur=function(){
+            thisname=this;
+            check(regPsd,1)
+            //防止重新修改密码两次密码不一样时不报错
+            if(conpsd.value){
+                checkSame() 
+            }
+                  
+        }
+        //确认两次密码相同
+        conpsd.onblur=function(){
+            //防止重新修改密码两次密码不一样时不报错
+            checkSame()
+        }
+        //注册判断
+        btn.onclick=function(){
+            if(regUser.test(user.value)&&regPsd.test(psd.value)&&(conpsd.value===psd.value)){
+                alert('注册成功')
+            }else{
+                alert('请正确填写信息')
+            }
+        }
+        // 验证密码相同
+        function checkSame(){
+            if(conpsd.value===psd.value){
+                errortips[2].style.display='none'
+            }else{
+                errortips[2].style.display='inline'
+            }
+        }
+        //验证正则
+        function check(reg,errortips_num){
+            if(reg.test(thisname.value)){
+                errortips[errortips_num].style.display='none'
+            }else{
+                errortips[errortips_num].style.display='inline'
+            }
+        }
+    </script>   
+
+
+   
+</body>
+</html>

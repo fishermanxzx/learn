@@ -1,0 +1,9 @@
+*{margin: 0;padding: 0;}
+body{background-color: #f3f3f3;}
+ul{list-style: none;}
+a{text-decoration: none;}
+.fl{float: left;}
+.fr{float: right;}
+.clear::after{content: "";display: block;height: 0;clear: both;}
+.center{width: 1200px;margin: 0 auto;}
+.son::before{ content: "";display: block;overflow: hidden;}

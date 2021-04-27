@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .menu {
+            width: 996px;
+            height: 238px;
+            border: #e3e3e3 solid 2px;
+            border-radius: 5px;
+            margin: 100px auto;
+        }
+
+        .coat p,
+        .pants p,
+        .dress p,
+        .selected p,
+        .cur_sel {
+            float: left;
+            padding-top: 8px;
+        }
+
+        .cur_sel {
+            padding-top: 0;
+        }
+
+        .item {
+            float: left;
+            margin-left: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .coat,
+        .pants,
+        .dress,
+        .selected {
+            margin-top: 20px;
+            margin-left: 100px;
+            text-align: center;
+        }
+
+        .active {
+            background: #ff6600 !important;
+            color: #fff !important;
+            border-radius: 5px;
+        }
+
+        .item:hover {
+            background: #f3edc2;
+            color: red;
+            border-radius: 5px;
+        }
+
+        .cur_sel div {
+            padding: 5px;
+            background: #ff6600;
+            color: #fff;
+            display: inline-block;
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .cur_sel div::after {
+            content: '×';
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="coat">
+            <p>上装:</p>
+            <div class="item active">全部</div>
+            <div class="item">针织衫</div>
+            <div class="item">毛呢外套</div>
+            <div class="item">T恤</div>
+            <div class="item">羽绒服</div>
+            <div class="item">棉衣</div>
+            <div class="item">卫衣</div>
+            <div class="item">风衣</div>
+            <div class="clear"></div>
+        </div>
+        <div class="pants">
+            <p>裤装:</p>
+            <div class="item active">全部</div>
+            <div class="item">牛仔裤</div>
+            <div class="item">小脚/铅笔裤</div>
+            <div class="item">休闲裤</div>
+            <div class="item">打底裤</div>
+            <div class="item">哈伦裤</div>
+            <div class="clear"></div>
+        </div>
+        <div class="dress">
+            <p>裙装:</p>
+            <div class="item active">全部</div>
+            <div class="item">连衣裙</div>
+            <div class="item">半身裙</div>
+            <div class="item">长袖连衣裙</div>
+            <div class="item">中长款连衣裙</div>
+            <div class="clear"></div>
+        </div>
+        <div class="selected">
+            <p>已选条件:</p>
+            <div class="cur_sel">
+                <p class="tips">暂时没有选择过滤条件</p>
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        $('.item').click(function () {
+            //点击高亮效果
+            $(this).addClass('active').siblings('.item').removeClass('active')
+            //添加已选
+            var id = $(this).parent().attr('class')
+
+            if ($('.cur_sel #' + id).length) {
+                //如果存在该类别则替换
+                $('.cur_sel #' + id).text($(this).text())
+            } else {
+                //不存在该类别则增加
+                $('.cur_sel').append('<div id=' + id + '>' + $(this).text() + '</div>')
+                //为已添加的商品绑定点击事件
+                $('.cur_sel #' + id).click(function () {
+                    //获取该类别
+                    rmid = $(this).attr('id')
+                    //删除点击的元素
+                    $(this).remove()
+                    //让已经删除的类别的全部高亮
+                    $('.'+rmid).children('.item').removeClass('active')
+                    $('.'+rmid+' div').first().addClass('active')
+                    //删除提示文字与否
+                    if ($('.cur_sel div').length) {
+                        $('.tips').hide()
+                    } else { $('.tips').show() }
+                })
+
+            }
+
+            //点击全部时删除该类内容
+            if ($(this).text() == '全部') {
+                $('.cur_sel #' + id).remove()
+            }
+
+
+            //删除提示文字与否
+            if ($('.cur_sel div').length) {
+                $('.tips').hide()
+            } else { $('.tips').show() }
+        })
+
+    </script>
+</body>
+
+</html>

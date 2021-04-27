@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+
+    </style>
+</head>
+<body>
+    <input type="text" id="city">
+    <script>
+        var city = document.getElementById('city')
+        function getWeather(){
+            //删除已有天气数据
+            var titles = document.body.getElementsByTagName('h1');
+            for (var i=titles.length;i>0;i--){
+                document.body.removeChild(titles[i-1]);
+            }
+            //ajax请求
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open('get',"https://restapi.amap.com/v3/weather/weatherInfo?key=580fd476df08d90a38d46b4d6b80537e&city="+city.value+'&extensions=all',true)
+            xmlhttp.send(null)
+            xmlhttp.onreadystatechange=function(){
+                //判断是否填入了城市
+                if(city.value){
+                    if(xmlhttp.readyState==4&&xmlhttp.status==200){
+                    //解析json数据
+                    var data =JSON.parse(xmlhttp.responseText); 
+                    //判断是否有该城市天气信息
+                    if(data.forecasts.length){
+                        var weatherCasts = data.forecasts[0].casts;
+                        for(var i =0;i<weatherCasts.length;i++){
+                            var h1  =document.createElement('h1');
+                            document.body.appendChild(h1);
+                            h1.innerHTML=data.forecasts[0].city+weatherCasts[i].date+'星期'+weatherCasts[i].week+'的早间天气是'+weatherCasts[i].dayweather+'温度'+weatherCasts[i].daytemp+'，晚间天气是'+weatherCasts[i].nightweather+'温度'+weatherCasts[i].nighttemp
+                        }
+                    }else{
+                        var h1 = document.createElement('h1');
+                        document.body.appendChild(h1);
+                        h1.innerHTML='所查地区暂无天气信息'
+                    }
+                }
+            }
+                }
+        }
+        city.onblur=getWeather
+    </script>
+</body>
+</html>

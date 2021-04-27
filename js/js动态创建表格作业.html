@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data =[ {'name':'小李','class':'1班','性别':'男','年龄':18},
+                    {'name':'小王','class':'1班','性别':'男','年龄':17},
+                    {'name':'小谢','class':'1班','性别':'女','年龄':16},
+                    {'name':'小强','class':'3班','性别':'男','年龄':18},
+                    {'name':'小张','class':'2班','性别':'女','年龄':17}]
+        //创建table标签
+        var table = document.createElement('table');
+        //在body标签追加table标签
+        document.body.appendChild(table)
+        //创建表头
+        var tr =document.createElement('tr')
+        table.append(tr)
+        for(var key in data[0]){
+            var td = document.createElement('td')
+            tr.append(td)
+            td.innerHTML=key
+        }
+        
+        //添加单元格内容
+        for(var i=0;i<data.length;i++){
+            var tr =document.createElement('tr')
+            table.append(tr)
+            for(var key in data[i]){
+                var td = document.createElement('td')
+                tr.append(td)
+                td.innerHTML=data[i][key]
+            }
+        } 
+        
+        // 给样式
+        table.style.border ='1px solid'
+        table.style.borderCollapse='collapse'
+        table.style.margin='0px auto'
+        var td = document.getElementsByTagName('td')
+        for(var i=0;i<td.length;i++){
+            td[i].style.border='1px solid'
+        }
+        
+
+
+
+    </script>
+</body>
+</html>

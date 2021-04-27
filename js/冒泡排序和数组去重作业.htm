@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var a =[11,2,6,12,5,89,15,41,5,1,189]
+       //冒泡排序
+       for(var i=0;i<a.length-1;i++){ // 循环轮次
+           for(var j =0 ;j<a.length-1-i;j++){ //每轮判断次数
+            if(a[j]>a[j+1]){
+                // 如果前一项大于后一项，交换位置
+                var max = a[j]
+                a[j] = a[j+1]
+                a[j+1] = max
+            }     
+        }
+    } 
+      // 数组去重
+      var b =['a','b','c',1,2,3,64,'asd','nihao',3,'a','c',1,2,3,64]
+      var c =[]
+      c.push(b[0])//第一个元素不用判断
+      for(var i=1;i<b.length;i++){ //遍历b中每个元素
+          for(var j=0;j<c.length;j++){ //遍历c中每个元素
+            if(c[j]===b[i]){ 
+                c.splice(j,1) //如果在c中找到和b中一样的元素，删除该元素并结束当前循环
+                break}
+          
+            }  
+            c.push(b[i])//无论是否找到相同元素，都加到c中
+       }
+     
+    alert(a)
+    alert(c)
+    </script>
+</body>
+</html>

@@ -1,0 +1,565 @@
+/* 导航模块 */
+.wrap .top{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrap a{
+    font-size: 18px;
+    color: #3c3d46;
+    line-height: 72px;
+}
+.wrap .logo{
+    line-height: 72px;
+}
+.wrap .logo img{
+    vertical-align: middle;
+}
+.wrap .nav{
+    margin-left: 159px;
+}
+.wrap .top li{
+    float: left;
+    width: 80px;
+    height: 72px;
+    text-align: center;
+    margin-right: 25px;
+}
+.wrap .top .active{
+    background-color: #5696ff;
+}
+.wrap .nav .active a{
+   color: #fefeff;
+}
+.wrap .nav li:hover{
+    background-color: #5696ff;
+}
+.wrap .nav li:hover a{
+   color: #fefeff;
+}
+.wrap .login_reg .line{
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background-color: #999999;
+    margin: 0 10px;
+}
+/* banner */
+.banner{
+    position: relative;
+    height: 600px;
+    background: url(../images/banner.jpg)no-repeat center;
+}
+.banner ul{
+    position: absolute;
+    left: 50%;
+    bottom: 29px;
+    transform: translateX(-50%);
+    width: 54px;
+}
+.banner ul li{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fcfcfd;
+}
+.banner ul li:nth-child(2){
+    border: 2px solid #fcfcfd;
+    box-sizing: border-box;
+    background: none;
+}
+/* search 搜索 */
+.search{
+    position: relative;
+    width: 350px;
+    margin-top: 70px;
+}
+.search input{
+    width: 339px;
+    height: 40px;
+    padding-left: 11px;
+    border-radius: 5px;
+    border: 1px solid #666666;
+    outline: none;
+}
+.search img{
+    position: absolute;
+    top: 8px;
+    right: 13px;
+}
+/* 标题1 */
+.title_box{
+    width: 327px;
+    margin-top: 60px;
+}
+.title_box .line{
+    width: 78px;
+    height: 6px;
+    background-color: #666666;
+    margin: 15px 0;
+
+}
+.title_box span{
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 14px;
+    color: #5696ff;
+}
+.title_box p{
+    font-size: 22px;
+    margin-top: 24px;
+    text-align: center;
+    color: #666666;
+}
+/* 地区旅游 */
+.pic_list{
+    width: 1200px;
+    margin-top: 54px;
+}
+.pic_list .pic{
+    float: left;
+    width: 118px;
+    height: 373px;
+    background-color: red;
+    margin-right: 3px;
+}
+.pic_list .pic:nth-child(6){
+    margin-right:0;
+    background: url(../images/french.jpg);
+}
+.pic_list .pic:nth-child(1){
+    background: url(../images/sichuan.jpg);
+}
+.pic_list .pic:nth-child(2){
+    background: url(../images/dali.jpg);
+}
+.pic_list .pic:nth-child(3){
+    background: url(../images/denmark.jpg);
+}
+.pic_list .pic:nth-child(4){
+    background: url(../images/Japan.jpg);
+}
+.pic_list .pic:nth-child(5){
+    background: url(../images/Italy.jpg);
+}
+.pic_list .denmark{
+    width: 594px;
+}
+.pic_list .shadow{
+    position: relative;
+    height: 303px;
+    background: rgba(51, 51, 51, .5);
+    font-size: 28px;
+    color: #fefefe;
+    line-height: 29px; 
+    padding-top: 70px;
+    padding-left: 30px; 
+}
+.pic_list .shadow img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* More>按钮 */
+.morebtn{
+    width: 160px;
+    height: 54px;
+    border-radius: 5px;
+    border: 2px solid #5696ff;
+    margin-top: 72px;
+    font-size: 26px;
+    color: #5696ff;
+    text-align: center;
+    line-height: 54px;
+}
+.morebtn:hover{
+   cursor: pointer;
+   background-color: #5696ff;
+   color: #fefefe;
+}
+/* 标题2 */
+.twotitle_box{
+   margin-top: 106px;
+}
+/* 特惠行程旅游景点 */
+.attr{
+    width: 1200px;
+    margin-top: 54px;
+}
+/* 顶部左边第一张图 */
+.attr .brigade{
+    position: relative;
+    width: 441px;
+    height: 307px;
+    background: url(../images/denmark_attractions.jpg);
+    margin-right: 8px;
+    font-size: 22px;
+    color: #ffffff;
+}
+.attr .brigade span{
+    position: absolute;
+    top: 51px;
+    left: 56px;
+}
+
+/* 顶部左边第二张图 */
+.attr .brigade:nth-child(2){
+    background: url(../images/vietnam_attr.jpg);
+}
+.attr .vietnam_box{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 400px;
+   height: 266px;
+   background:rgba(0, 0, 0, 0.3);
+   border: 4px solid rgba(255, 255, 255, 0.8);
+   box-sizing: border-box;
+}
+.attr .vietnam_box p:nth-child(1){
+   margin-top: 24px;
+   margin-left: 30px;
+   font-size: 22px;
+   color: #ffffff; 
+}
+.attr .vietnam_box .line_vietnam{
+   width:90px;
+   height: 4px;
+   background-color: #ffffff;
+   margin-top: 14px;
+
+}
+.attr .vietnam_box .rmb_box .fl_line{
+    margin-left: 39px;
+}
+.attr .rmb_box .fr_line{
+    margin-right: 39px;
+}
+
+.attr .vietnam_box .rmb{
+   margin-left: 29px;
+}
+.attr .vietnam_box .rmb_box{
+   margin-top: 26px;
+}
+
+/* 底部左边第1张图 */
+.attr .bottom_attr{
+   margin-top: 8px;
+}
+/* 3 */
+.attr .bottom_attr .brigade:nth-child(1){
+    width: 362px;
+    height: 369px;
+    background: url(../images/bangkok.jpg);
+}
+.attr .bottom_attr .brigade:nth-child(2){
+   width: 521px;
+   height: 369px;
+   background: url(../images/malaysia.jpg);
+}
+/* 特惠行程旅游景点z右边图 1 */
+.attr .right_attr .brigade{
+   width: 300px;
+   height: 472px;
+   background: url(../images/japan_attractions.jpg);
+   margin-right: 0;
+}
+/* 2 */
+.attr .right_attr .brigade:nth-child(2){
+   width: 300px;
+   height: 204px;
+   background: url(../images/India_attractions.jpg);
+   margin-top: 8px;
+}
+/* <!-- More>按钮 --> */
+.act{
+   margin-top: 74px;
+   background-color: #5696ff;
+   color: #fefefe;
+}
+/* 标题3 */
+.three_title p{
+   font-size: 20px;
+}
+/* 旅游资讯 */
+.information_box{
+   width: 1200px;
+   margin-top: 226px;
+}
+.information_box .information{
+   height: 745px;
+   background: url(../images/pic1.jpg)no-repeat;
+}
+.information img{
+   border: 33px solid #f3f3f3;
+   margin-top: -173px;
+}
+.fl_provisions{
+   margin-top: 50px;
+}
+.title_l_line{
+   width: 132px;
+   height: 7px;
+   background-color: #666666;
+   margin-left: auto;
+   margin-bottom: 29px;
+}
+.fl_provisions p{
+  font-size: 30px;
+  color: #333333;
+  text-align: right;
+  margin-left: 117px;
+}
+.fr_provisions{
+   margin-top: 50px;
+}
+.fr_provisions p{
+   width: 560px;
+   font-size: 24px; 
+   line-height: 48px;
+   color: #333333;
+   text-indent: 2rem;
+   margin-top: -17px;
+}
+.but{
+   width: 180px;
+   height: 60px;
+   border-radius: 5px;
+   border: 3px solid #999999;
+   font-size: 26px;
+   color: #333333;
+   box-sizing: border-box;
+   text-align: center;
+   line-height: 54px;
+   margin-top: 48px;
+}
+/* 新西兰 */
+.nxl_pic{
+   margin-top: 71px;
+}
+.nxl_pic img:nth-child(2){
+   margin-left: -103px;
+   border: 47px solid #f3f3f3;
+   margin-bottom: 157px;
+   
+}
+.nxl_article .fl_provisions p{
+   margin-left: 211px;
+}
+.nxl_article .fr_provisions p{
+   width: 560px;
+   margin-top: -167px;
+   text-indent: 0rem;
+}
+/* 游级分享 */
+.travel{
+   width: 1200px;
+   margin-top: 55px;
+}
+.travel .fl_travel{
+   width: 730px;
+   height: 962px;
+   background: url(../images/pic5.png);
+   box-shadow: 2px 2px 10px 2px rgba(4, 0, 0, .5);
+}
+.travel .mask{
+    width: 561px;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+.travel .select_title{
+   font-size: 24px;
+   color: #5696ff;
+   padding-top: 65px;
+   padding-left: 35px;
+}
+.travel .dali{
+   font-size: 24px;
+   color: #fefefe;
+   padding-top: 74px;
+   padding-left: 35px;
+   color: #fefefe;
+}
+.travel .travel_attr ul{
+   margin-left: 35px;
+   margin-top: 12px;
+}
+.travel .travel_attr ul li{
+   float: left;
+   font-size: 20px;
+   color: #fefefe;
+   margin-right: 13px;
+}
+.travel .travel_attr .travel_line{
+   width: 1px;
+   height: 18px;
+   background-color: #fefefe;
+   margin-top: 6px;
+}
+.travel .mask .introduce{
+   width: 415px;
+   margin-left: 35px;
+   margin-top: 24px;
+   font-size: 18px;
+   color: #fefefe;
+   line-height: 48px;
+   text-indent: 2rem;
+}
+.travel .mask .introduce p:nth-child(1){
+   text-indent: 0rem;
+   text-align: right;
+}
+.travel .mask .but{
+  border: 2px solid #ffffff;
+  font-size: 22px;
+  color: #ffffff;
+  margin-top: 128px;
+  margin-left: 35px;
+}
+/* 右边 */
+.fr_travel .log{
+   width: 443px;
+   height: 466px;
+   background-color: #ffffff;
+   box-shadow: 2px 2px 20px 2px rgba(4, 0, 0, .2);
+}
+/* 1 */
+.fr_travel .log_img{
+   width: 375px;
+   height: 297px;
+   background: url(../images/pic6.jpg) no-repeat;
+   padding-top: 35px;
+   background-position:bottom;
+   margin: 0 auto;
+}
+.log_img span{
+   display: inline-block;
+   width: 60px;
+   height: 18px;
+   font-size: 12px;
+   color: #ffffff;
+   text-align: center;
+   line-height: 18px;
+   background-color: rgba(86, 150, 255, .5);
+   margin-left: 9px;
+   margin-top: 12px;
+}
+.log_img span:nth-child(2){
+   width: 30px;
+}
+
+.fr_travel .log .log_text{
+   width: 375px;
+   height: 126px;
+   margin-left: 33px;
+}
+.fr_travel .log_text{
+   margin-top: 9px;
+}
+.fr_travel .log_text p{
+   font-size: 12px;
+}
+.fr_travel .log_text p:nth-child(2){
+   font-size: 14px;
+   color: #333333;
+   margin-top: 5px;
+}
+.fr_travel .log_text p:nth-child(3){
+   font-size: 12px;
+   color: #666666;
+   line-height: 18px;
+   margin-top: 5px;
+}
+
+.fr_travel .log .log_text a{
+   font-size: 12px;
+   color: #5696ff;
+   line-height: normal;
+}
+.fr_travel .two_log{
+   margin-top: 32px;
+}
+/* 2 */
+.fr_travel .log_img2{
+   background: url(../images/pic7.jpg)no-repeat;
+   padding-top: 35px;
+   background-position: bottom;
+}
+/* 照片精选 */
+.photo_box{
+   position: relative;
+   width: 1200px;
+   margin-top: 56px;
+   height: 498px;
+   background-color: #ffffff;
+   box-shadow: 2px 2px 20px 2px rgba(4, 0, 0, .2);
+}
+.photo_box p{
+   font-size: 24px;
+   color: #5696ff;
+   padding-top: 26px;
+   padding-left: 15px;
+}
+.photo_box ul{
+   position: relative;
+   margin-top: 30px;
+}
+.photo_box ul li{
+   float: left;
+   width: 276px;
+   margin-left: 19px;
+}
+.photo_box .photo_text span{
+   font-size: 12px;
+   color: #666666;
+   margin-top: 20px;
+   margin-right: 18px;
+}
+.photo_box li p{
+   font-size: 18px;
+   padding: 0;
+   margin-top: 5px;
+   color: #666666;
+}
+.photo_box .fl_box,.photo_box .fr_box{
+    position: absolute;
+    width: 52px;
+    height: 50px;
+    background-color: #ffffff
+}
+.photo_box .fl_box{
+   top: 218px;
+   left: 19px;
+}
+.photo_box .fr_box{
+   top: 218px;
+   right: 20px;
+}
+.photo_box .fl_box img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.photo_box .fr_box img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+/* 底部 */
+.floot{
+   background-color: #5696ff;
+   margin-top: 66px;
+}
+.floot p{
+   width: 654px;
+   font-size: 16px;
+   color: #fafafc;
+   line-height: 35px;
+   padding: 30px 0;
+   margin: 0 auto;
+   text-align: left;
+}

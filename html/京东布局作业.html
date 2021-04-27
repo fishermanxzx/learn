@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .clear {
+            clear: both;
+        }
+
+        .all {
+            margin: 50px auto;
+            width: 500px;
+            height: 900px;
+            background: black;
+            border: 1px red solid;
+        }
+
+        .user_loading,
+        .news,
+        .service {
+            margin-top: 20px;
+            margin-left: 50px;
+            width: 400px;
+            background: white;
+            border: 1px red solid;
+        }
+
+        .user_loading {
+            height: 200px;
+        }
+
+        .news {
+
+            height: 200px;
+
+        }
+
+        .service {
+            height: 410px;
+
+        }
+
+        .loading,
+        .user_profit {
+            background: green;
+            margin: 15px 25px;
+            border: 1px red solid;
+        }
+
+        .loading {
+            height: 100px;
+        }
+
+        .user_profit {
+            height: 50px;
+        }
+
+        .logo,
+        .user_show {
+            width: 150px;
+            height: 70px;
+            float: left;
+            background: blue;
+            margin: 15px 10px;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .user_show {
+            width: 200px;
+        }
+
+        .user_show>div {
+            width: 150px;
+            height: 30px;
+            background: yellow;
+            margin: 4px auto;
+        }
+
+        .user_login,.user_reg {
+            width: 55px;
+            height: 20px;
+            background: aqua;
+            float: left;
+            margin: 5px 10px;
+        }
+
+        .user_profit_new,
+        .user_profit_plus {
+            height: 40px;
+            width: 150px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 15px;
+            background: yellow;
+        }
+
+        .news_head,
+        .news_list {
+            width: 350px;
+            margin: 5px 25px;
+            background: green;
+            border: 1px red solid;
+        }
+
+        .news_head {
+            height: 30px;
+        }
+
+        .news_list {
+            height: 150px;
+        }
+
+        .news_tit,.news_hd {
+            width: 125px;
+            height: 20px;
+            margin: 5px 25px;
+            float: left;
+            background: blue;
+
+        }
+
+        .news_list>div {
+            width: 300px;
+            height: 30px;
+            margin: 5px 25px;
+            background: blue;
+            border: 1px red solid;
+        }
+
+        .news_tag {
+            width: 50px;
+            height: 20px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 10px;
+            background: yellow;
+        }
+
+        .news_item {
+            width: 150px;
+            height: 20px;
+            float: right;
+            margin-top: 5px;
+            margin-right: 10px;
+            background: yellow;
+        }
+
+        .service_items {
+            width: 350px;
+            height: 90px;
+            background: blue;
+            margin: 10px 25px;
+            border: 1px red solid;
+        }
+
+        .service_item {
+            width: 100px;
+            height: 70px;
+            background: yellow;
+            margin: 10px 8px;
+            float: left;
+        }
+
+        .service_log {
+            width: 80px;
+            height: 40px;
+            background: violet;
+            margin: 5px 10px;
+        }
+
+        .service_name {
+            width: 80px;
+            height: 15px;
+            background: aqua;
+            margin: 5px 10px;
+        }
+        .text,.iconfont{
+            width: 50px;
+            height: 15px;
+            margin: 2px 5px;
+            float: left;
+            background: yellow;
+        }
+        .text,.iconfont{
+            width: 50px;
+            height: 15px;
+            margin: 2px;
+            background: yellow;
+        }
+        .text{float: left;}
+        .iconfont{float: right;}
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="user_loading">
+            <div class="loading">
+                <div class="logo"></div>
+                <div class="user_show">
+                    <div></div>
+                    <div>
+                        <div class="user_login"></div>
+                        <div class="user_reg"></div>
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="user_profit">
+                <div class="user_profit_new"></div>
+                <div class="user_profit_plus"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news_head">
+                <div class="news_hd"></div>
+                <div class="news_tit">
+                    <div class="text"></div>
+                    <div class="iconfont"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="news_list">
+                <div>
+                    <div class="news_tag"></div>
+                    <div class="news_item"></div>
+                    <div class="clear"></div>
+                </div>
+                <div>
+                    <div class="news_tag"></div>
+                    <div class="news_item"></div>
+                    <div class="clear"></div>
+                </div>
+                <div>
+                    <div class="news_tag"></div>
+                    <div class="news_item"></div>
+                    <div class="clear"></div>
+                </div>
+                <div>
+                    <div class="news_tag"></div>
+                    <div class="news_item"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service_items">
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="service_items">
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="service_items">
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="service_items">
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="service_item">
+                    <div class="service_log"></div>
+                    <div class="service_name"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+*{margin: 0;padding: 0;}
+body{background-color: #f3f3f3;}
+li{list-style: none;}
+.head{width: 1200px;margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.logo{margin-top: 7px;}
+.nav li{width: 80px;height: 72px;float: left;text-align: center;line-height: 72px;color: #3c3d46;font-size: 18px;margin-left: 24px;}
+.nav .act{background: #5696ff;color: #fefeff;margin-left: 0px;}
+.nav li:hover{background: #5696ff;color: #fefeff;}
+.nav{margin-left: 159px;}
+.login_register{line-height: 72px;color: 3c3d46;font-size: 18px;}
+.login_register .line{margin: 0 6px;}
+.banner{background: url(../img/banner.png) no-repeat center ;height: 600px;position: relative;}
+.change{width: 54px;position: absolute;bottom: 29px;left: 50%;margin-left: -27px;}
+.circle{width: 16px;height: 16px;border-radius: 50%;}
+.search{width: 338px;height: 40px;border: #666666 1px solid;border-radius: 5px;padding-left:12px ;outline: none;}
+.search_wrap{width: 350px;margin: 70px auto 0;position: relative;}
+.search_wrap>img{position: absolute;top: 9px;right: 14px;}
+.main_title .line{width: 78px;height: 6px;background: #666666;margin-top: 20px;}
+.main_title h1{font-size: 36px;color: #5696ff;margin-left: 14px;}
+.main_title{width: 328px;margin: auto;}
+.area{margin-top: 60px;}
+.sec_title{text-align: center;font-size: 22px;color: #666666;margin-top: 24px;}
+.pic_list{width: 1200px;margin: 56px auto 0;}
+.pic_list .pic_item{float: left;width: 118px;height: 372px;margin-right: 3px;}
+.pic_item>div{height: 372px;background: rgba(51, 51, 51, 0.5);color: #fbfcfd;text-align: center;}
+.pic_item>div>P{padding-left: 32px;padding-top: 69px;width: 1px;font-size: 28px;line-height: 34px;}
+.firstmore{width: 160px;height: 54px;border:2px solid #5696ff;border-radius: 5px;margin: 72px auto 0;color: #5696ff;
+    font-size: 26px;line-height: 54px;text-align: center;}
+.discount{margin-top: 107px;}
+.secondmore{width: 160px;height: 54px;border-radius: 5px;margin: 66px auto 0;color: #fefefe;
+    font-size: 26px;line-height: 54px;text-align: center;background-color:#5696ff ;}
+.travel,.share{width: 1200px;margin: 107px auto 0;}
+.travel .news{height: 745px;background: url(../img/newsbg.jpg) no-repeat center;margin-top: 229px;position: relative;}
+.news img{width: 550px;height: 440px;border: 40px #f3f3f3 solid;position: absolute;left: 571px;top: -172px;}
+.rule{margin-top: 53px;}
+.rule .title{padding-left: 113px;text-align: right;}
+.title .line{width: 132px;height: 7px;background: #666666;display: inline-block;margin-bottom: 28px;}
+.title h3{font-size: 30px;color: #333333;font-weight: 400;}
+.content{width: 563px;}
+.content p{line-height: 48px;font-size: 24px;color: #333333;text-indent: 2em;}
+.content .complete{border: #999999 solid 3px;width: 180px;height: 60px;border-radius: 5px;text-align: center;
+line-height: 60px;color: #333333;font-size: 26px;margin-top: 50px;}
+.othernews{padding-top: 72px;}
+.othernews .title>div:first-child{width: 580px;height: 780px;background: url(../img/NewZealand2.jpg) no-repeat -176px -45px;}
+.othernews .title>div:last-child{width: 450px;padding-top: 50px;}
+.othernews .title{text-align: right;}
+.othernews .title .line{width: 132px;height: 7px;background: #666666;display: inline-block;}
+.content .content_img{height: 636px;position: relative;}
+.content .content_img>div{width: 625px;height: 471px;border:48px solid #f3f3f3;background: url(../img/NewZealand1.jpg) no-repeat center;position: absolute;
+top: 65px;right: 9px;}
+
+.content .content_text p{font-size: 24px;line-height: 56px;color: #333333;text-indent: 0;}
+.travelpic{width: 1200px;margin: 57px auto 0;}
+.picsone{width: 894px;}
+.picstwo{width: 302px;}
+.picsone>div:first-child{margin-bottom: 9px;}
+.firstpic{
+    background: url(../img/Denmarktravel.png) no-repeat center;
+    width: 445px;height: 308px;
+}
+.secondpic{
+    background: url(../img/Vietnam.png) no-repeat center;
+    width: 445px;height: 308px;
+}
+.thirdpic{
+    background: url(../img/Thailand.png) no-repeat center;
+    width: 364px;height: 370px;
+}
+.fourthpic{
+    background: url(../img/Malaysia.png) no-repeat center;
+    width: 522px;height: 369px;
+}
+.fifthpic{height: 473px;background: url(../img/JapanMountain.png) no-repeat center;margin-bottom: 9px;}
+.sixthpic{height: 204px;background: url(../img/India.png) no-repeat center;}
+.travelpic p{color: #fefefe;font-size: 22px;line-height: 35px;padding-left:55px ;padding-top: 49px;font-weight: 700;}
+.secondpic .picmask{width: 400px;height: 266px;border: 4px solid #ffffff;background: rgba(0, 0, 0,0.3);margin: 21px auto 0;}
+.picmask p{color: #fefefe;font-size: 22px;line-height: 35px;padding-left:30px ;padding-top: 23px;font-weight: 700;}
+.picmask .main_title .line{width: 90px;height: 4px;background: #ffffff;margin-top: 15px;}
+.picmask .main_title p{font-size: 26px;color: #ffffff;margin-left: 25px;line-height: 35px;padding: 0;}
+.picmask .main_title{width: 315px;margin: auto;margin-top: 30px;}
+.thirdmore{width: 160px;height: 54px;border:2px solid #5696ff;border-radius: 5px;margin: 68px auto 0;color: #5696ff;
+    font-size: 26px;line-height: 54px;text-align: center;}
+.share {margin: 54px auto 0;width: 1200px;}
+.share .article{margin-top: 48px;}
+.share .selected{width: 730px;height: 972px;background:url(../img/dl.png) no-repeat center;background-size:cover;}
+.share .short{width: 445px;height: 972px;}
+.selected .mask{width: 489px;height: 100%;background: rgba(0,0,0,0.3);box-sizing: border-box;padding-left: 37px;
+padding-top: 67px;padding-right: 55px;color: #fefefe;margin: 0;}
+.selearticle{font-size: 24px;line-height: 35px;color: #5696ff;margin-bottom: 75px;}
+.fz24{font-size: 24px;line-height: 35px;}
+.areafz20{font-size: 20px;line-height: 35px;}
+.areafz20 .line{margin: 0 10px;}
+.fz18{font-size: 18px;line-height: 35px;text-align: right;font-weight: 400;}
+.mask>p{font-size: 18px;line-height: 48px;color: #ffffff;text-indent: 2em;}
+.mask .complete{border: #ffffff solid 2px;width: 160px;height: 60px;border-radius: 5px;text-align: center;color: #ffffff;
+font-size: 22px;line-height: 60px;margin-top: 128px;}
+.short{width: 445px;height: 883px;margin-top: auto;}
+.short .first{height: 466px;background-color: #fff;padding: 34px 34px 0 ;box-sizing: border-box;}
+.short .second{height: 466px;background-color: #fff;margin-top: 40px;padding: 34px 34px 0;
+box-sizing: border-box;color: #333;}
+.short .second>div,.short .first>div{width: 377px;height: 297px;padding: 13px 0 0 9px;  color: #fff;line-height: 18px;
+text-align: center;font-size: 12px;}
+.short .first>div{background:url(../img/dusk2.png) no-repeat center;}
+.short .second>div{background: url(../img/dusk1.png) no-repeat center;}
+.imgtext1{width: 60px;height: 18px;background-color: #a3c1df;}
+.imgtext2{width: 30px;height: 18px;background-color: #a3c1df;margin-left: 9px;}
+.selectedpic{width: 1164px;background: #fff;margin: 45px auto 0;padding: 0 18px 34px;}
+.selectedpic>h1{line-height: 78px;color: #5696ff;font-size: 24px;}
+.selectedpic .picsblock{display: inline-block;margin-right: 15px;color: #666}
+.selectedpic .picsblock:last-child{margin-right: 0;}
+.selectedpic .picsblock>div:first-child{width: 276px;height: 332px;line-height: 332px;}
+.selectedpic .picsblock>.pic4{text-align: right;}
+.selectedpic .pic1{background: url(../img/selected1.png) no-repeat center;}
+.selectedpic .pic2{background: url(../img/selected2.png) no-repeat center;}
+.selectedpic .pic3{background: url(../img/selected3.png) no-repeat center;}
+.selectedpic .pic4{background: url(../img/selected4.png) no-repeat center;}
+.selectedpic .date{margin-top: 18px;;font-size: 12px;}
+.selectedpic .picsblock>p{font-size: 18px;}
+.selectedpic .pic1>div,.selectedpic .pic4>div{width: 50px;height: 50px;display: inline-block;}
+.selectedpic .pic1>div{background: url(../img/left.png) no-repeat center;background-color: #ffffff;}
+.selectedpic .pic4>div{background: url(../img/right.png) no-repeat center;background-color: #ffffff;}
+.fourthmore{width: 160px;height: 54px;border:2px solid #5696ff;border-radius: 5px;margin: 100px auto 0;color: #5696ff;
+    font-size: 26px;line-height: 54px;text-align: center;}
+.footer{background-color: #5696ff;color: #fafafc;font-size: 16px;height: 98px;padding-top: 32px;margin-top: 65px;}
+.footer p{margin:auto;width: 655px;line-height: 35px;}

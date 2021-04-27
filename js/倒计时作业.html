@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='time'></div>
+    <script>
+        var qmDate = new Date('2021-05-01 00:00:00')
+        var time = document.getElementById('time')
+        var timer = setInterval(clock, 1000)
+        // 清明节倒计时
+        function clock() {
+            var now = new Date()
+            // 求现在到目标日期的秒数
+            var ms = qmDate - now 
+            if (ms > 0) {
+                // 获取秒数
+                var seconds = parseInt((qmDate - now) / 1000)
+                // 获取天数 一天有24*60*60=86400s
+                var days = parseInt(seconds / 86400)
+                days = days >= 10 ? days : '0' + days
+                // 获取剩余小时 
+                var hours = parseInt((seconds % 86400) / 3600)
+                hours = hours >= 10 ? hours : '0' + hours
+                // 获取剩余分钟
+                var minutes = parseInt(((seconds % 86400) % 3600) / 60)
+                minutes = minutes >= 10 ? minutes : '0' + minutes
+                // 获取剩余秒数
+                var resSeconds = seconds % 60
+                resSeconds = resSeconds >= 10 ? resSeconds : '0' + resSeconds
+                // 写入剩余时间
+                time.innerHTML = "距离劳动节还有：" + days + '天' + hours + '小时' + minutes + '分钟' + resSeconds + '秒'
+            }else{
+                clearInterval(timer);
+                timer=null
+                time.innerHTML='劳动节到了'
+            }
+        }      
+    </script>
+</body>
+
+</html>

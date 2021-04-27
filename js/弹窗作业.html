@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img{width: 400px;height: 400px;position: fixed;bottom: -400px;right: 0;}
+    </style>
+</head>
+<body>
+    <img src="qface.jpg"  id="adv">
+    <script>
+        var adv = document.getElementById('adv')
+        var timer = null //弹出定时器
+        var timer2 = null   // 广告关闭定时器
+        var timer3 = null   // 一次性定时器
+        var cssStyle = document.defaultView.getComputedStyle(adv,null)
+        var bottom = parseInt(cssStyle.bottom)
+        function moveUp(){
+            if(bottom<0){
+                bottom+=20
+                adv.style.bottom = bottom+'px'
+            }else{
+                clearInterval(timer)
+                timer = null
+            }
+        }
+        //弹出广告函数
+        function moveDown(){
+            if(bottom>-400){
+                bottom-=20
+                adv.style.bottom = bottom+'px'
+            }else{
+                clearInterval(timer2)
+                timer2 = null
+                timer3 = setTimeout(function(){
+                    timer = setInterval(moveUp,100)
+                },2000)
+            }
+        }
+        //点击关闭广告函数
+        adv.onclick=function(){
+                // clearInterval(timer)        这段函数允许用户提前关闭广告
+                // clearInterval(timer2)
+                // timer = null
+                // timer2 = null
+                if(timer==null && timer2==null){  //防止广告上下抖动，只允许弹出或广告关闭一个定时器存在
+                    timer2 = setInterval(moveDown,100)
+                }
+                
+        }
+        //窗口加载完再执行
+        window.onload=function(){
+            timer=setInterval(moveUp,100)
+        }
+    </script>
+</body>
+</html>

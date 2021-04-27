@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .heros{width: 150px;height: 50px;background:aqua ;text-align: center;line-height: 50px;float: left;margin-left: 5px;}
+        .skills{width: 615px;height: 300px;background: darkgrey;margin-left: 5px;display: none;}
+        .first{display: block;}
+        .skills div{font-size: 30px;color: green;}
+    </style>
+</head>
+<body>
+    <div>
+        <div class="heros">剑圣</div>
+        <div class="heros">小鱼人</div>
+        <div class="heros">盖伦</div>
+        <div class="heros">女警</div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="skills first">
+        <div>被动:双重打击</div>
+        <div>Q:阿尔法突袭</div>
+        <div>W:冥想</div>
+        <div>E:无极剑道</div>
+        <div>R:高原血统</div>
+    </div>
+    <div class="skills">
+        <div>被动:伶俐斗士</div>
+        <div>Q:淘气打击</div>
+        <div>W:海石三叉戟</div>
+        <div>E:古灵/精怪</div>
+        <div>R:巨鲨强袭</div>
+    </div>
+    <div class="skills">
+        <div>被动:坚韧</div>
+        <div>Q:致命打击</div>
+        <div>W:勇气</div>
+        <div>E:审判</div>
+        <div>R:德玛西亚正义</div>
+    </div>
+    <div class="skills">
+        <div>被动:爆头</div>
+        <div>Q:和平使者</div>
+        <div>W:约德尔诱捕器</div>
+        <div>E:90口径绳网</div>
+        <div>R:让子弹飞</div>
+    </div>  
+
+    <script>
+        var heros = document.getElementsByClassName('heros')
+        var skills = document.getElementsByClassName('skills')
+        for(var i=0;i<heros.length;i++){
+            heros[i].index=i;
+            heros[i].onclick=function(){
+                for(var j=0;j<heros.length;j++){
+                    heros[j].style.background=''
+                }
+                this.style.background='darkgrey'
+                for(var j=0;j<skills.length;j++){
+                    skills[j].style.display='none'
+                }
+                skills[this.index].style.display='block'
+            }
+        }
+    </script>
+                      
+</body>
+</html>

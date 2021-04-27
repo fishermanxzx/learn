@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .fl{float:left}
+        .fr{float:right}
+        .clear{clear: both;}
+        .toolbar,.index_header,.screen{background: black;margin-bottom: 10px;border: 1px red solid;}
+        .toolbar{ height: 36px;}
+        .index_header{height: 110px;}
+        .screen{height: 600px;}
+        .toolbar_box{width: 85px;height: 32px;background: blanchedalmond;margin:  1px 10px;}
+        .toolbar_name{width: 40px;height: 26px;background: blue;margin:  2px ;}
+        .toolbar_arrow{width: 30px;height: 26px;background: blue;margin:  2px ;}
+        .logo{width: 190px;height: 90px;margin: 10px 20px;background: blanchedalmond;border: 1px red solid;}
+        .search{width: 600px;height: 100px;margin: 5px 250px;background: blanchedalmond;}
+        .search_fool{width: 510px;height: 40px;background-color: blue;margin: 5px 50px;border: 1px red solid;}
+        .search_hot{width: 510px;height: 40px;background: blue;margin: 5px 50px;border: 1px red solid;}
+        .logo_img{width: 50px;height: 80px;background: blue;margin: 5px 10px;}
+        .logo_text{width: 100px;height: 80px;background: blue;margin: 5px 10px;}
+        .search_hot_title{width: 40px;height: 30px;background: yellow;margin: 5px 3px;}
+        .search_box{width: 300px;height: 30px;background: yellow;margin: 5px 20px;}
+        .search_logo{width: 20px;height: 26px;background:turquoise;margin: 2px 5px;}
+        .search_content{width: 260px;height: 26px;background:turquoise;margin: 2px 5px;}
+        .search_text{width: 120px;height: 30px;background: yellow;margin: 5px 20px;}
+        .sort{width: 350px;height: 560px;margin-left: 20px;background: antiquewhite;}
+        .item{width: 710px;height: 560px;margin-left: 20px;margin-right:20px;background: antiquewhite;}
+        .login{width: 350px;height: 560px;margin-right: 20px;background: antiquewhite;}
+        .sort,.item,.login{margin-top: 20px;border: red 1px solid;}
+        .sort_title{width: 300px;height: 40px;background: blue;margin: 5px auto;border: red 1px solid;}
+        .sort_list{width:300px ;height: 500px;background: blue;margin: 5px auto;border: red 1px solid;}
+        .sort_logo,.sort_text{width: 30px;height: 30px;background: yellow;margin: 5px 10px;}
+        .sort_item{width: 280px;height: 30px;background:yellow;border: 1px red solid;margin:1px auto;}
+        .sort_item_logo{width: 30px;height: 24px;background: turquoise;border: 1px red solid;margin: 1px 2px;}
+        .sort_item_text{width: 230px;height: 24px;background: turquoise;border: 1px red solid;margin: 1px 2px;}
+        .li{width: 60px;height: 20px; ;background: slategray;margin: 2px 5px;}
+        .index{width: 690px;height: 40px;margin: 5px auto;border: 1px red solid;background: blue;}
+        .banner{width: 690px;height: 500px;margin: 5px auto;border: 1px red solid;background: blue;}
+        .icon{width: 75px;height: 30px;margin: 5px;background: yellow;}
+        .banner>div{width: 670px;height: 480px;margin: 10px;background: yellow;}
+        .publicity{width: 300px;height:40px;background: blue;margin: 5px auto;border: red 1px solid;}
+        .content{width: 300px;height:500px;background: blue;margin: 5px auto;border: red 1px solid;}
+        .user{width: 280px;height: 150px;background: yellow;margin: 5px auto;border: 1px red solid}
+        .login_list{width: 280px;height: 330px;background: yellow;margin: 3px auto;border: 1px red solid}
+        .user_login{width: 260px;height: 90px;background: turquoise;margin: 3px auto;border: 1px red solid}
+        .new_user{width: 260px;height: 20px;background: turquoise;margin: 3px auto;border: 1px red solid}
+        .user_vip{width: 260px;height: 20px;background: turquoise;margin: 3px auto;border: 1px red solid}
+        .user_logo{width: 80px;height: 80px;background: slategray;margin: 5px;border: 1px red solid}
+        .user_register{width: 150px;height: 80px;background: slategray;margin: 5px;border: 1px red solid}
+        .user_register>div{width: 140px;height: 30px;background: white;margin: 5px auto;border: 1px red solid}
+        .user_log,.user_reg{width: 30px;height: 25px;background:red;margin: 2px;}
+        .login_items{width: 270px;height: 70px;background: turquoise;margin: 10px auto;border: 1px red solid}
+        .login_item{width: 80px;height: 60px;background: slategray;margin: 5px 3px;border: 1px red solid}
+        .login_item_logo{width: 70px;height: 30px;background:white;margin: 3px auto;}
+        .login_item_text{width: 70px;height: 20px;background:white;margin: 3px auto;}
+    </style>
+</head>
+<body>
+   
+    <div class="toolbar">
+        <div class="toolbar_box fl" style="margin-left: 20px;">
+            <div class="toolbar_name fl"></div>
+            <div class="toolbar_arrow fl"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="toolbar_box fl">
+            <div class="toolbar_name fl"></div>
+            <div class="toolbar_arrow fl"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="toolbar_box fl">
+            <div class="toolbar_name fl"></div>
+            <div class="toolbar_arrow fl"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="toolbar_box fl">
+            <div class="fl" style="width: 22px;height: 26px;margin: 2px;background: blue;"></div>
+            <div class="fl" style="width: 22px;height: 26px;margin: 2px;background: blue;"></div>
+            <div class="fl" style="width: 22px;height: 26px;margin: 2px;background: blue;"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="toolbar_box fr"  style="margin-right: 20px;">
+            <div class="toolbar_name fl"></div>
+            <div class="toolbar_arrow fl"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="toolbar_box fr"></div>
+        <div class="toolbar_box fr"></div>
+        <div class="toolbar_box fr">
+            <div class="fl" style="width: 22px;height: 26px;margin: 2px;background: blue;"></div>
+            <div class="fl" style="width: 22px;height: 26px;margin: 2px;background: blue;"></div>
+            <div class="fl" style="width: 22px;height: 26px;margin: 2px;background: blue;"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="toolbar_box fr"></div>
+        <div class="toolbar_box fr">
+            <div class="toolbar_name fl"></div>
+            <div class="toolbar_arrow fl"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="toolbar_box fr">
+            <div class="toolbar_name fl"></div>
+            <div class="toolbar_arrow fl"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="toolbar_box fr"></div>
+        <div class="toolbar_box fr"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="index_header">
+        <div class="logo fl">
+            <div class="logo_img fl"></div>
+            <div class="logo_text fr"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="search fl">
+            <div class="search_fool">
+                <div class="search_box fl">
+                    <div class="search_logo fl"></div>
+                    <div class="search_content fl"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="search_text fr"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="search_hot">
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="search_hot_title fl"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="screen">
+        <div class="sort fl">
+            <div class="sort_title">
+                <div class="sort_logo fl"></div>
+                <div class="sort_text fl"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="sort_list">
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sort_item">
+                    <div class="sort_item_logo fl"></div>
+                    <div class="sort_item_text fl">
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="li fl"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="item fl">
+            <div class="index">
+                <div class="icon fl"></div>
+                <div class="icon fl"></div>
+                <div class="icon fl"></div>
+                <div class="icon fl"></div>
+                <div class="icon fl"></div>
+                <div class="icon fl"></div>
+                <div class="icon fl"></div>
+                <div class="icon fl"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="banner">
+                <div ></div>
+            </div>
+        </div>
+        <div class="login fr">
+            <div class="publicity">
+            </div>
+            <div class="content">
+                <div class="user">
+                    <div class="user_login">
+                        <div class="user_logo fl"></div>
+                        <div class="user_register fl">
+                            <div></div>
+                            <div>
+                                <div class="user_log fl"></div>
+                                <div class="user_reg fl"></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="new_user"></div>
+                    <div class="user_vip"></div>
+                </div>
+                <div class="login_list">
+                    <div class="login_items">
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>                          
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="login_items">
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>                          
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="login_items">
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>                          
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="login_items">
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>                          
+                        <div class="login_item fl">
+                            <div class="login_item_logo"></div>
+                            <div class="login_item_text"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+</body>
+</html>

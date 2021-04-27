@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .pic {
+            position: relative;
+            width: 590px;
+            height: 455px;
+            overflow: hidden;
+            margin: auto;
+        }
+
+        ul {
+            position: relative;
+            margin: 0 auto;
+            width: 400%;
+            left: 0;
+        }
+
+        ul li {
+
+            float: left;
+            list-style: none;
+        }
+
+        .btn {
+            margin: auto;
+            width: 590px;
+        }
+    </style>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="pic">
+        <ul>
+            <li>
+                <img src="img/1.webp">
+            </li>
+            <li>
+                <img src="img/2.webp">
+            </li>
+            <li>
+                <img src="img/3.webp">
+            </li>
+            <li>
+                <img src="img/4.webp">
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="btn">
+        <button>上一个</button>
+        <button>下一个</button>
+    </div>
+
+    <script>
+        var num = 1; //指示当前是第几张图片
+        var flag = true;
+        $('.btn button:first-child').click(function () {
+            //判断动画是否已经执行完毕
+            if (flag) { 
+                flag = false    //若动画开始执行，关闭点击效果
+                if (num == 1) { //若当前是第一张则跳到最后一张
+                    $('ul').animate({
+                        left: -($('li').length - 1) * 590 + 'px'
+
+                    }, function () { flag = true })//动画执行后回调
+                    num = $('li').length + 1 //当前张数是最后一张+1，+1是为了抵消后面的-1
+                } else {
+                    $('ul').animate({
+                        left: '+=590px'
+                    }, function () { flag = true })//动画执行后回调
+                }
+                num--; //每次点击让第几张的数-1
+            }
+
+
+
+        })
+        $('.btn button:last-child').click(function () {
+            //判断动画是否已经执行完毕
+            if (flag) {
+                flag = false //若动画开始执行，关闭点击效果
+                if (num < $('li').length) { 
+                    $('ul').animate({
+                        left: '-=590px'
+                    }, function () { flag = true }) //动画执行后回调
+                } else { //若当前是最后一张则跳到第一张
+                    $('ul').animate({
+                        left: '0px'
+
+                    }, function () { flag = true })//动画执行后回调
+                    num = 1-1; //当前张数是第一张-1，-1是为了抵消后面的+1
+                }
+
+                num++;//每次点击让第几张的数+1
+            }
+
+
+        })
+    </script>
+
+</body>
+
+</html>

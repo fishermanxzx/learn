@@ -1,0 +1,108 @@
+
+.wrap{
+        width: 100%;
+        height: 640px;
+        background: url(../images/login.jpg) no-repeat center;
+}
+.login_icon{
+        width: 93px;
+        height: 92px;
+        background: url(../images/login-icon.png);
+        margin: auto;
+        margin-top: 20px;
+}
+.login{
+        width: 380px;
+        height: 310px;
+        border-radius: 8px;
+        box-shadow: 2px 0px 6px 0px rgba(4, 0, 0, .4) ;
+        background-color: #ffffff;
+        margin: auto;
+        margin-top: 22px;
+}
+.login_top{
+        padding-top: 40px;
+        border-bottom: 1px solid #cecece;
+}
+.input_box{
+        width: 300px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid #cecece;
+        box-sizing: border-box;
+        margin: auto;
+        margin-bottom: 18px;
+        overflow: hidden;
+}
+.input_box input{
+        width: 264px;
+        height: 40px;
+        font-size: 14px;
+        padding: 0 18px;
+        outline: none;
+        border: none;  
+}
+.forgot_pwd{
+        width: 300px;
+        margin: auto;
+        font-size: 12px;
+        text-align: right;
+        padding: 12px 0;
+}
+.forgot_pwd span:nth-child(1){
+        color: #cecece;
+}
+.forgot_pwd span:nth-child(2){
+        color: #999999;
+}
+.login_btn{
+        width: 300px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: #5696ff;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+        margin: auto;
+        margin-top: 14px;
+}
+.login_bottom{
+        margin-left: 39px;
+        margin-top: 16px;
+}
+.log_other{
+        font-size: 12px;
+        color: #999999;
+}
+.log_other_bottom{
+        font-size: 12px;
+        color: #999999;
+        margin-top: 16px;
+}
+.img_text{
+        width: 50px;
+        text-align: center;
+        margin-right: 38px;
+}
+.log_other_bottom p{
+        margin-top: 10px;
+}
+.reg{
+        width: 160px;
+        height: 26px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, .2);
+        margin: auto;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 17px;
+        line-height: 26px;
+}
+.reg span{
+        color: #ffffff;
+}
+.reg a{
+        color: #5696ff;
+}
+  
