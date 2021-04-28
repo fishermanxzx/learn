@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'iconfont';
+    src        : url('../fonts/iconfont.eot');
+    src        : url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iconfont.woff2') format('woff2'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family            : "iconfont" !important;
+    font-size              : 16px;
+    font-style             : normal;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+span.iconfont {
+    cursor: pointer;
+}
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    height : 0;
+    clear  : both;
+}
+
+table {
+
+    margin    : 0 auto;
+    width     : 60%;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color          : black;
+    font-size      : 16px;
+}
+
+p {
+    font-size: 12px;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+td>div {
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.minus,
+.plus {
+    display         : inline-block;
+    width           : 24px;
+    height          : 24px;
+    background-color: #ebebeb;
+    text-align      : center;
+    cursor          : pointer;
+    color           : #9b9b9c;
+}
+
+.nums {
+    outline   : none;
+    width     : 50px;
+    height    : 20px;
+    text-align: center;
+    border    : none;
+}
+
+.accounts {
+    width  : 400px;
+    border : black 5px solid;
+    padding: 20px 5px;
+}
+
+.accounts p {
+    text-align : left;
+    font-size  : medium;
+    font-weight: 600;
+}
+
+.detail {
+    margin-top: 10px;
+}
+
+.sum {
+    margin-top: 5px;
+}
+
+.distribution {
+    margin-top   : 5px;
+    border-bottom: 2px grey solid;
+}
+
+.confirm_price {
+    margin    : 20px auto 0;
+    text-align: center;
+}
+
+.confirm_price>button {
+    background: #272727;
+    color     : white;
+    padding   : 5px 20px;
+    border    : 1px solid transparent;
+
+}
+
+.confirm_price>button:hover {
+    background: #e33057;
+    cursor    : pointer;
+}
+
+.remove {
+    cursor: pointer;
+}
+
+.choice::before {
+    content: '\e60a';
+}
+
+.has_choiced {
+    background: #ebebeb;
+}
+
+.remove_choiced,
+.remove_all {
+    width  : 200px;
+    padding: 20px;
+    margin : 0;
+    cursor : pointer;
+}
+
+.waitadd_item1,
+.waitadd_item2,
+.waitadd_item3 {
+    
+    width     : 150px;
+    text-align: center;
+}
+
+.item_price {
+    font-size: 16px;
+    color    : red;
+
+}
+
+.add_item {
+    cursor: pointer;
+}
+
+th:first-child,
+td:first-child {
+    width     : 100px;
+    text-align: left;
+}
