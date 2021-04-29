@@ -247,6 +247,18 @@ $(function () {
         })
         $('.money').html('$' + money.toFixed(2))
     }
+    //点击结算跳转到结算页面
+    $('.confirm_price button').on('click',function(){
+        $('.choose_pay').addClass('choose')
+        $('.choose_pay').next().removeClass('choose')
+        //获取总价格并显示在结算页面中
+        $('.pay_money span').html($('.money').eq(1).html())
+        $('.pay').show()
+        $('.cart,.wait').hide()
+        //回到页面顶部
+        $('html').animate({scrollTop:0}, 'slow');
+
+    })   
     //选择页面
     $('.choose_cart').on('click','div',function(){
         $(this).parent().siblings().removeClass('choose')

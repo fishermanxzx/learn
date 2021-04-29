@@ -163,7 +163,7 @@ td>div {
     text-align: center;
 }
 
-.confirm_price>button {
+.confirm_price button {
     background: #272727;
     color     : white;
     padding   : 5px 20px;
@@ -171,7 +171,7 @@ td>div {
 
 }
 
-.confirm_price>button:hover {
+.confirm_price button:hover {
     background: #e33057;
     cursor    : pointer;
 }
@@ -229,6 +229,7 @@ div.wait {
     font-weight     : 700;
     font-size       : 24px;
     display         : none;
+    
 }
 
 .cart {
@@ -242,6 +243,9 @@ div.pay button {
     color     : white;
     padding   : 5px 20px;
     border    : 1px solid transparent;
+    cursor: pointer;
+    font-weight     : 700;
+    font-size       : 24px;
 }
 
 .pay_money span {
