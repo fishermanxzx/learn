@@ -12,137 +12,163 @@
 	<script src="js/cart.js"></script>
 </head>
 
-<body>
-	<div style="margin: 0px 50px;width: 200px;" class="fl">
-		<div class="waitadd_item1">
-			<img src="img/cart-product/1.jpg">
-			<div><a href="#">时尚短袖</a>
-				<p>尺寸：M</p>
-				<p>颜色：黑色</p>
-			</div>
-			<p class="item_price">商品价格：$238.56</p>
-			<p class="iconfont add_item">添加至购物车&#xe61d;</p>
-		</div>
-		<div class="waitadd_item2">
-			<img src="img/cart-product/2.jpg">
-			<div><a href="#">长裙</a>
-				<p>尺寸：M</p>
-				<p>颜色：深蓝</p>
-			</div>
-			<p class="item_price">商品价格：$156.64</p>
-			<p class="iconfont add_item">添加至购物车&#xe61d;</p>
-		</div>
-		<div class="waitadd_item3">
-			<img src="img/cart-product/3.jpg">
-			<div>
-				<a href="#">睡裙</a>
-				<p>尺寸：M</p>
-				<p>颜色：白色</p>
-			</div>
-			<p class="item_price">商品价格：$98.12</p>
-			<p class="iconfont add_item">添加至购物车&#xe61d;</p>
-		</div>
-	</div>
-	<table rules='rows'>
-		<thead>
-
-			<tr>
-				<th><span class="iconfont all">&#xe60c;全选</span></th>
-				<th>商品</th>
-				<th>价格</th>
-				<th>数量</th>
-				<th>全部</th>
-				<th>移除</th>
-			</tr>
-
-
-
-		</thead>
-		<tbody>
-			<!-- <tr>
-				<td><span class="iconfont first">&#xe60c;</span></td>
-				<td class="clear">
-					<img src="img/cart-product/1.jpg" class="fl">
-					<div class="fl"><a href="#">时尚短袖</a>
+<body >
+	
+	<div class="clear" style="margin: 50px auto;width: 1200px;" >
+		<ul class="clear">
+			<li class="fl choose choose_cart">
+				<div >1</div>
+				<div>购物车</div>
+			</li>
+			<li class="fl choose_pay">
+				<div>2</div>
+				<div>结算</div>
+			</li>
+			<li class="fl choose_wait">
+				<div>3</div>
+				<div>待收货</div>
+			</li>
+		</ul>
+		<div class="cart clear">
+			<div style="width: 200px;" class="fl">
+				<div class="waitadd_item1">
+					<img src="img/cart-product/1.jpg">
+					<div><a href="#">时尚短袖</a>
 						<p>尺寸：M</p>
 						<p>颜色：黑色</p>
 					</div>
-				</td>
-				<td class="unit_price">$238.56</td>
-				<td>
-					<span class="minus">-</span><input type="text" value="1" class="nums"><span class="plus">+</span>
-				</td>
-				<td class="total">$238.56</td>
-				<td class="iconfont remove">&#xe667;</td>
-			</tr>
-			<tr>
-				<td><span class="iconfont first">&#xe60c;</span></td>
-				<td class="clear">
-					<img src="img/cart-product/2.jpg" class="fl">
-					<div class="fl"><a href="#">长裙</a>
+					<p class="item_price">商品价格：$238.56</p>
+					<p class="iconfont add_item">添加至购物车&#xe61d;</p>
+				</div>
+				<div class="waitadd_item2">
+					<img src="img/cart-product/2.jpg">
+					<div><a href="#">长裙</a>
 						<p>尺寸：M</p>
 						<p>颜色：深蓝</p>
 					</div>
-				</td>
-				<td class="unit_price">$156.64</td>
-				<td>
-					<span class="minus">-</span><input type="text" value="1" class="nums"><span class="plus">+</span>
-				</td>
-				<td class="total">$156.64</td>
-				<td class="iconfont remove">&#xe667;</td>
-			</tr>
-			<tr>
-				<td><span class="iconfont first">&#xe60c;</span></td>
-				<td class="clear">
-					<img src="img/cart-product/3.jpg" class="fl">
-					<div class="fl"><a href="#">睡裙</a>
+					<p class="item_price">商品价格：$156.64</p>
+					<p class="iconfont add_item">添加至购物车&#xe61d;</p>
+				</div>
+				<div class="waitadd_item3">
+					<img src="img/cart-product/3.jpg">
+					<div>
+						<a href="#">睡裙</a>
 						<p>尺寸：M</p>
 						<p>颜色：白色</p>
 					</div>
-				</td>
-				<td class="unit_price">$98.12</td>
-				<td>
-					<span class="minus">-</span><input type="text" value="1" class="nums"><span class="plus">+</span>
-				</td>
-				<td class="total">$98.12</td>
-				<td class="iconfont remove">&#xe667;</td>
-			</tr> -->
-			<tr class="last">
-				<td colspan="6" class="clear">
-
-					<div class="remove_all fr iconfont">删除全部商品&#xe667;</div>
-					<div class="remove_choiced fr iconfont">删除已选商品&#xe667;</div>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="6" class="clear">
-					<div class="accounts fr ">
-						<p>付款方式</p>
-						<div class="detail">
-							<div class="items clear">
-								<span class="fl">已选商品件数</span>
-								<span class="fr items_num">3件</span>
+					<p class="item_price">商品价格：$98.12</p>
+					<p class="iconfont add_item">添加至购物车&#xe61d;</p>
+				</div>
+			</div>
+			<table rules='rows' class="fr">
+				<thead>
+		
+					<tr>
+						<th><span class="iconfont all">&#xe60c;全选</span></th>
+						<th>商品</th>
+						<th>价格</th>
+						<th>数量</th>
+						<th>全部</th>
+						<th>移除</th>
+					</tr>
+		
+		
+		
+				</thead>
+				<tbody>
+					<!-- <tr>
+						<td><span class="iconfont first">&#xe60c;</span></td>
+						<td class="clear">
+							<img src="img/cart-product/1.jpg" class="fl">
+							<div class="fl"><a href="#">时尚短袖</a>
+								<p>尺寸：M</p>
+								<p>颜色：黑色</p>
 							</div>
-							<div class="sum clear">
-								<span class="fl">合计</span>
-								<span class="fr money">$960.00</span>
+						</td>
+						<td class="unit_price">$238.56</td>
+						<td>
+							<span class="minus">-</span><input type="text" value="1" class="nums"><span class="plus">+</span>
+						</td>
+						<td class="total">$238.56</td>
+						<td class="iconfont remove">&#xe667;</td>
+					</tr>
+					<tr>
+						<td><span class="iconfont first">&#xe60c;</span></td>
+						<td class="clear">
+							<img src="img/cart-product/2.jpg" class="fl">
+							<div class="fl"><a href="#">长裙</a>
+								<p>尺寸：M</p>
+								<p>颜色：深蓝</p>
 							</div>
-							<div class="distribution clear">
-								<span class="fl">配送</span>
-								<span class="fr">免费配送</span>
+						</td>
+						<td class="unit_price">$156.64</td>
+						<td>
+							<span class="minus">-</span><input type="text" value="1" class="nums"><span class="plus">+</span>
+						</td>
+						<td class="total">$156.64</td>
+						<td class="iconfont remove">&#xe667;</td>
+					</tr>
+					<tr>
+						<td><span class="iconfont first">&#xe60c;</span></td>
+						<td class="clear">
+							<img src="img/cart-product/3.jpg" class="fl">
+							<div class="fl"><a href="#">睡裙</a>
+								<p>尺寸：M</p>
+								<p>颜色：白色</p>
 							</div>
-						</div>
-						<p style="color: red;font-size: 20px;text-align: right;margin-top: 15px;" class="money">$960.00
-						</p>
-						<div class="confirm_price">
-							<button>结算</button>
-						</div>
-					</div>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-
+						</td>
+						<td class="unit_price">$98.12</td>
+						<td>
+							<span class="minus">-</span><input type="text" value="1" class="nums"><span class="plus">+</span>
+						</td>
+						<td class="total">$98.12</td>
+						<td class="iconfont remove">&#xe667;</td>
+					</tr> -->
+					<tr class="last">
+						<td colspan="6" class="clear">
+		
+							<div class="remove_all fr iconfont">删除全部商品&#xe667;</div>
+							<div class="remove_choiced fr iconfont">删除已选商品&#xe667;</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="6" class="clear">
+							<div class="accounts fr ">
+								<p>付款方式</p>
+								<div class="detail">
+									<div class="items clear">
+										<span class="fl">已选商品件数</span>
+										<span class="fr items_num">3件</span>
+									</div>
+									<div class="sum clear">
+										<span class="fl">合计</span>
+										<span class="fr money">$960.00</span>
+									</div>
+									<div class="distribution clear">
+										<span class="fl">配送</span>
+										<span class="fr">免费配送</span>
+									</div>
+								</div>
+								<p style="color: red;font-size: 20px;text-align: right;margin-top: 15px;" class="money">$960.00
+								</p>
+								<div class="confirm_price">
+									<button>结算</button>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="pay">
+			<div>结算</div> 
+			<div class="pay_money">
+				总价格: <span></span>
+			</div>
+			<button>支付</button>
+		</div>
+		<div class="wait">待收货</div>
+	</div>
 
 
 </body>

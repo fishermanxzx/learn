@@ -156,7 +156,7 @@ $(function () {
         //删除该商品
         $(this).parent().remove()
         //每次删除判断已选商品数量是否等于购物车中商品的数量。如果是则让全选状态选上，否则取消全选
-        if (($('.first.choice').length == $('.first').length)&&($('.first').length!==0)) {
+        if (($('.first.choice').length == $('.first').length) && ($('.first').length !== 0)) {
             $('.all').text('取消全选').addClass('choice')
         } else {
             $('.all').html('&#xe60c;全选').removeClass('choice')
@@ -247,5 +247,23 @@ $(function () {
         })
         $('.money').html('$' + money.toFixed(2))
     }
-
+    //选择页面
+    $('.choose_cart').on('click','div',function(){
+        $(this).parent().siblings().removeClass('choose')
+        $('.cart').show()
+        $('.pay,.wait').hide()
+    })
+    $('.choose_pay').on('click','div',function(){
+        $(this).parent().addClass('choose')
+        $(this).parent().next().removeClass('choose')
+        //获取总价格并显示在结算页面中
+        $('.pay_money span').html($('.money').eq(1).html())
+        $('.pay').show()
+        $('.cart,.wait').hide()
+    })
+    $('.choose_wait').on('click','div',function(){
+        $(this).parent().addClass('choose').siblings().addClass('choose')
+        $('.wait').show()
+        $('.cart,.pay').hide()
+    })
 })

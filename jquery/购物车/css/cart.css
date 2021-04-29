@@ -20,6 +20,10 @@ span.iconfont {
     cursor: pointer;
 }
 
+body {
+    background-color: #efefef;
+}
+
 * {
     margin : 0;
     padding: 0;
@@ -40,11 +44,52 @@ span.iconfont {
     clear  : both;
 }
 
+ul {
+    list-style      : none;
+    margin          : 0 auto 50px;
+    width           : 80%;
+    background-color: white;
+}
+
+li {
+    width      : 33%;
+    text-align : center;
+    font-size  : 20px;
+    font-weight: 600;
+    color      : #9b9b9c;
+
+}
+
+li>div {
+    cursor: pointer;
+}
+
+li>div:first-child {
+    width           : 50px;
+    height          : 50px;
+    background-color: #efefef;
+    display         : inline-block;
+    line-height     : 50px;
+    border-radius   : 50%;
+
+
+}
+
+.choose>div:first-child {
+    background-color: red;
+    color           : white;
+}
+
+.choose>div:last-child {
+    color: black;
+}
+
 table {
 
-    margin    : 0 auto;
-    width     : 60%;
-    text-align: center;
+
+    width           : 80%;
+    text-align      : center;
+    background-color: white;
 
 }
 
@@ -77,6 +122,7 @@ td>div {
     text-align      : center;
     cursor          : pointer;
     color           : #9b9b9c;
+    user-select     : none;
 }
 
 .nums {
@@ -153,7 +199,7 @@ td>div {
 .waitadd_item1,
 .waitadd_item2,
 .waitadd_item3 {
-    
+
     width     : 150px;
     text-align: center;
 }
@@ -172,4 +218,32 @@ th:first-child,
 td:first-child {
     width     : 100px;
     text-align: left;
+}
+
+div.pay,
+div.wait {
+    width           : 100%;
+    height          : 1000px;
+    text-align      : center;
+    background-color: white;
+    font-weight     : 700;
+    font-size       : 24px;
+    display         : none;
+}
+
+.cart {
+    width           : 100%;
+    background-color: white;
+}
+
+div.pay button {
+    background: red;
+    width     : 200px;
+    color     : white;
+    padding   : 5px 20px;
+    border    : 1px solid transparent;
+}
+
+.pay_money span {
+    color: red;
 }
