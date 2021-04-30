@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        .clear::after{content: '';display: block;clear: both;height: 0%;}
+        ul{list-style: none;margin: 0px auto;width: 600px;}
+        li{width: 100px;float: left;background-color: aquamarine;line-height: 50px;height: 50px;text-align: center;}
+        .active{color: white;background-color: lightpink;}
+        p{margin:50px auto 0;width: 600px;}
+    </style>
+</head>
+<body>
+   <div id="app">
+       <!-- 传索引 -->
+        <p>传索引的结果</p>
+        <ul class="clear">
+            <li v-for="(item,index) in list" :key="index" :class="{active:choose===index}" @click='selected(index)'>{{item}}</li>
+        </ul>
+        <!-- 传值 -->
+        <p>传值的结果</p>
+        <ul class="clear">
+            <li v-for="(item,index) in list" :key="index" :class="{active:choose===item}" @click='selected(item)'>{{item}}</li>
+        </ul>
+   </div>
+   <script>
+       var vm = new Vue({
+           el:'#app',
+           data:{
+               list:['选项1','选项2','选项3','选项4','选项5','选项1'],
+               //用来标志当前选项的索引index
+               choose:''
+           },
+           methods: {
+               selected:function(index){
+                   //点击哪个选项，传入该选项的索引并赋给标志choose(不要用item判断，因为item值有可能重复，而index唯一)
+                   this.choose=index
+               }
+           }
+       })
+   </script>
+</body>
+</html>

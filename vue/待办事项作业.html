@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id='app'>
+        <input type="text" v-model='msg' @keyup.enter='addthing'>
+        <h3>待办事项</h3>
+        <div v-for='(item,index) in todolist' :key="index" @click='remove(index)'>{{item}}</div>
+    </div>
+    <script src="./vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                msg:'',
+               todolist:[]
+            },
+            
+            methods:{
+                addthing:function(){
+                    this.todolist.push(this.msg)
+                    this.msg=''
+                },
+                remove:function(index){
+                    this.todolist.splice(index,1)
+
+                }
+            }
+        })
+      
+    </script>
+</body>
+</html>
