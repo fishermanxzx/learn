@@ -128,12 +128,15 @@ $(function () {
         //计算商品总件数和价格
         getitems()
     })
+    //通过input表单修改商品数量
     $('table').on('change', '.nums', function () {
         var val = $(this).val();
         var price = $(this).parent().siblings('.unit_price').html();
         price = price.substr(1)
         price = (price * val).toFixed(2)
         $(this).parent().siblings('.total').html('$' + price);
+        //计算商品总件数和价格
+        getitems()
 
     })
     //删除点击的商品
